@@ -5,7 +5,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import ContentWrapper from "../styles/ContentWrapper"
+import ContentWrapper from "../../styles/ContentWrapper"
 
 // Full Width Section
 const StyledSection = styled.section`
@@ -37,6 +37,7 @@ const ___Section___ = ({ content }) => {
     <StyledSection id="___SectionHashId___">
       <StyledContentWrapper>
         <h3>___SectionTitle___</h3>
+        <p>hello world</p>
         {/* ____SectionContent____ */}
       </StyledContentWrapper>
     </StyledSection>

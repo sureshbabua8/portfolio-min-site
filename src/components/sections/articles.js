@@ -148,6 +148,7 @@ const Articles = () => {
       <StyledContentWrapper>
         <h3 className="section-title">Latest Articles on Medium</h3>
         <div className="articles">
+          <h4>Coming soon!</h4>
           {articles
             ? articles.map(item => (
                 <a

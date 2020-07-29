@@ -1,9 +1,9 @@
 module.exports = {
 
-    author: "@konstantinmuenster",
-    siteTitle: "Gatsby Starter Portfolio Minimal",
-    siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
-    siteDescription: "A modern one-page portfolio with a clean yet expressive design.",
+    author: "Amirthavarshini Sureshbabu",
+    siteTitle: "Amirtha Sureshbabu Portfolio",
+    siteShortTitle: "Amirtha Sureshbabu", // Used as logo text in header, footer, and splash screen
+    siteDescription: "Amirtha's one page portfolio",
     siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
     siteLanguage: "en_US",
     siteIcon: "src/content/favicon.png", // Relative to gatsby-config file
@@ -12,7 +12,7 @@ module.exports = {
 
     // You can create your own Medium feed with this rss to json converter: https://rss2json.com/
     // To access your Medium RSS feed, just replace this url with your username: https://medium.com/feed/@{yourname}
-    mediumRssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40konstantin.muenster",
+    mediumRssFeed: "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40amirthasureshbabu",
     shownArticles: 3,
     
     // There are icons available for the following platforms: 
@@ -20,34 +20,31 @@ module.exports = {
     socialMedia: [
         {
             name: "Linkedin",
-            url: "https://www.linkedin.com/in/konstantin-muenster/"
-        },
-        {
-            name: "Medium",
-            url: "https://medium.com/@konstantin.muenster"
+            url: "https://www.linkedin.com/in/amirthasur/"
         },
         {
             name: "Github",
-            url: "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal"
+            url: "https://github.com/sureshbabua8"
         },
         {
-            name: "Behance",
-            url: "https://www.behance.net/konstanmnster"
+            name: "Email",
+            url: "mailto:as43@illinois.edu"
         },
     ],
   
     navLinks: {
         menu: [
-            {
-                name: "Articles",
-                url: "/#articles",
-            },
+            
             {
                 name: "About Me",
                 url: "/#about",
             },
             {
-                name: "Features",
+                name: "Experiences",
+                url: "/#experiences",
+            },
+            {
+                name: "Projects",
                 url: "/#projects",
             },
         ],

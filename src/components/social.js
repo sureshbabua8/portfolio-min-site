@@ -50,7 +50,7 @@ const StyledSocialWrapper = styled.div`
     }
 
     &::-webkit-scrollbar-track {
-      background-color: #fff;
+      background-color: #ffffff;
       border-radius: 8px;
     }
   }
@@ -84,7 +84,7 @@ const StyledSocialProfile = styled.a`
   color: ${({ theme }) => theme.colors.primary};
   &:hover {
     background-position: left bottom;
-    color: #ffffff;
+    color: #e3f6f5;
   }
   &:hover svg {
     /* Change svg color to white */

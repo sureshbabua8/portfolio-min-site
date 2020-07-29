@@ -9,18 +9,23 @@ import Articles from "../components/sections/articles"
 import About from "../components/sections/about"
 import Interests from "../components/sections/interests"
 import Projects from "../components/sections/projects"
+import Experiences from "../components/sections/experiences"
 import Contact from "../components/sections/contact"
+// import ___Section___ from "../components/templates/section"
 import { splashScreen } from "../config"
 
 const IndexPage = ({ data }) => (
   <Layout splashScreen={splashScreen}>
-    <SEO title="Portfolio Minimal - A Gatsby Starter." />
+    <SEO title="CS Portfolio" />
     <Hero content={data.hero.edges} />
     {/* Articles is populated via Medium RSS Feed fetch */}
     <Articles />
     <About content={data.about.edges} />
     <Interests content={data.interests.edges} />
+    <Experiences content={data.experiences.edges} />
+{/* <___Section___ content={data.projects.edges} /> */}
     <Projects content={data.projects.edges} />
+    {/* <Projects content={data.projects.edges} /> */}
     <Contact content={data.contact.edges} />
   </Layout>
 )
@@ -114,6 +119,24 @@ export const pageQuery = graphql`
           buttonVisible
           buttonUrl
           buttonText
+        }
+      }
+    }
+  }
+  experiences: allMdx(filter: {fileAbsolutePath: {regex: "/experiences/"}, frontmatter: {visible: {eq: "true"}}}, sort: {fields: [frontmatter___position], order: ASC}) {
+    edges {
+      node {
+        body
+        frontmatter {
+          title
+          category
+          tags
+          position
+          buttonVisible
+          buttonUrl
+          buttonText
+          tags
+          position
         }
       }
     }
