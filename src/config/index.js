@@ -30,6 +30,10 @@ module.exports = {
             name: "Email",
             url: "mailto:as43@illinois.edu"
         },
+        {
+            name: "Resume",
+            url: "https://drive.google.com/file/d/134Y9pPdb0Ff8cgz32PLZru3igLdaC0iL/view?usp=sharing"
+        }
     ],
   
     navLinks: {

@@ -334,7 +334,7 @@ const Projects = ({ content }) => {
           })}
         </div>
       </StyledContentWrapper>
-      {sectionDetails.frontmatter.buttonVisible === "true" && (
+      {/* {sectionDetails.frontmatter.buttonVisible === "true" && (
         <motion.a
         ref={bRef}
         variants={bVariants}
@@ -349,7 +349,7 @@ const Projects = ({ content }) => {
           {sectionDetails.frontmatter.buttonText}
         </Button>
       </motion.a>
-      )}
+      )} */}
     </StyledSection>
   )
 }
