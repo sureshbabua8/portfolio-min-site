@@ -50,10 +50,10 @@ const StyledWrapper = styled(ContentWrapper)`
     }
     .projects {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       margin-top: -2.5rem;
       padding: 2.5rem 2.5rem;
-      overflow-x: scroll;
+      overflow-x: visible;
       overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
       &::-webkit-scrollbar {
@@ -72,7 +72,7 @@ const StyledWrapper = styled(ContentWrapper)`
           -webkit-appearance: none;
         }
 
-        &::-webkit-scrollbar:horizontal {
+        &::-webkit-scrollbar:vertical {
           height: 0.8rem;
         }
 
@@ -182,7 +182,7 @@ const Experiences = ({ content }) => {
 
   // visibleProject is needed to show which project is currently
   // being viewed in the horizontal slider on mobile and tablet
-  const [visibleProject, setVisibleProject] = useState(1)
+  // const [visibleProject, setVisibleProject] = useState(1)
 
   // projects don't track the visibility by using the onScreen hook
   // instead they use react-visibility-sensor, therefore their visibility
@@ -203,7 +203,7 @@ const Experiences = ({ content }) => {
   useEffect(() => {
     // mobile and tablet only: set first project as visible in the
     // horizontal slider
-    setVisibleProject(1)
+    // setVisibleProject(1)
     // required for animations: set visibility for all projects to
     // "false" initially
     let initial = {}
@@ -238,9 +238,9 @@ const Experiences = ({ content }) => {
           animate={tOnScreen ? "visible" : "hidden"}
         > 
           <h3 className="section-title">{sectionDetails.frontmatter.title}</h3>
-          <div className="counter">
+          {/* <div className="counter">
             {visibleProject} / {projects.length}
-          </div>
+          </div> */}
         </motion.div>
         <div className="projects">
           {projects.map(project => {
