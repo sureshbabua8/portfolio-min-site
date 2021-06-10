@@ -32,7 +32,7 @@ module.exports = {
         },
         {
             name: "Resume",
-            url: "https://drive.google.com/file/d/134Y9pPdb0Ff8cgz32PLZru3igLdaC0iL/view?usp=sharing"
+            url: "https://drive.google.com/file/d/13EU98azNTlRK54AJ165oTuq376atWEtS/view?usp=sharing"
         }
     ],
   
@@ -49,7 +49,7 @@ module.exports = {
             },
             {
                 name: "Projects",
-                url: "/#projects",
+                url: "/#involvement",
             },
         ],
         button: {
