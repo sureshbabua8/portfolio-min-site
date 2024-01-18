@@ -28,11 +28,11 @@ module.exports = {
         },
         {
             name: "Email",
-            url: "mailto:as43@illinois.edu"
+            url: "mailto:amirthasureshbabu@gmail.com"
         },
         {
             name: "Resume",
-            url: "https://drive.google.com/file/d/13EU98azNTlRK54AJ165oTuq376atWEtS/view?usp=sharing"
+            url: "https://drive.google.com/file/d/1qVbOUtnwFgsUYagMPxnY5UMxOl29tgW_/view?usp=sharing"
         }
     ],
   
